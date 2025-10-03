@@ -1,0 +1,35 @@
+# Arquivos temporários
+*.DS_Store
+*~
+*.bak
+*.swp
+
+# Arquivos de editor/IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos do Podman
+*.tar
+*.img
+podman-data/
+
+# Logs e caches
+*.log
+/var/log/*
+/var/cache/*
+
+# Arquivos sensíveis
+*.key
+*.pem
+*.crt
+.env
+
+# Diretórios de persistência (já mapeados via volumes)
+/opt/salt-master_data/
+
+# Builds e outputs
+_build/
+dist/
+*.pdf
+*.docx
