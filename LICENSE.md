@@ -1,32 +1,31 @@
-# Creative Commons Attribution 4.0 International (CC BY 4.0)
+# Licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)
 
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+Ao exercer os Direitos Licenciados (definidos abaixo), você aceita e concorda em estar vinculado aos termos e condições desta Licença Pública Atribuição 4.0 Internacional Creative Commons ("Licença Pública"). Na medida em que esta Licença Pública possa ser interpretada como um contrato, você é concedido os Direitos Licenciados em consideração à sua aceitação destes termos e condições, e o Licenciante concede-lhe esses direitos em consideração aos benefícios que o Licenciante recebe ao disponibilizar o Material Licenciado sob estes termos e condições.
 
-## Licensed Material
-All documentation, including but not limited to the `SETUP.md` file and other Markdown files in the `salt-master` repository, unless otherwise specified.
+## Material Licenciado
+Toda a documentação neste repositório, incluindo, mas não limitado a, `SETUP.md`, `master_api.conf`, `run.sh`, `Dockerfile`, e outros arquivos relacionados à configuração de um Salt Master (versão 3007) com Podman no openSUSE Leap 15.6, a menos que especificado de outra forma.
 
-## Licensed by
+## Licenciado por
 Mario Luz (GitHub: mariosergiosl)  
-Date: October 03, 2025  
-Source: https://github.com/mariosergiosl/salt-master
+Data: 03 de outubro de 2025  
+Origem: https://github.com/mariosergiosl/salt-master
 
-## License Terms
-The full text of the Creative Commons Attribution 4.0 International License is available at:  
-https://creativecommons.org/licenses/by/4.0/legalcode (em inglês).
-https://creativecommons.org/licenses/by/4.0/deed.pt_BR (em português).
+## Termos da Licença
+O texto completo da Licença Creative Commons Atribuição 4.0 Internacional está disponível em:  
+https://creativecommons.org/licenses/by/4.0/legalcode (em inglês) ou https://creativecommons.org/licenses/by/4.0/deed.pt_BR (em português).
 
-### Summary (not part of the legal license)
-You are free to:
-- Share: Copy and redistribute the material in any medium or format.
-- Adapt: Remix, transform, and build upon the material for any purpose, even commercially.
+### Resumo (não faz parte da licença legal)
+Você é livre para:
+- **Compartilhar**: Copiar e redistribuir o material em qualquer meio ou formato.
+- **Adaptar**: Remixar, transformar e criar a partir do material para qualquer fim, mesmo comercial.
 
-Under the following terms:
-- **Attribution**: You must give appropriate credit to Mario Sergio (mariosergiosl), provide a link to the license (https://creativecommons.org/licenses/by/4.0/), and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **No additional restrictions**: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+Sob os seguintes termos:
+- **Atribuição**: Você deve dar o crédito apropriado a Mario Sergio (mariosergiosl), fornecer um link para a licença e indicar se mudanças foram feitas. Você pode fazê-lo de qualquer maneira razoável, mas não de forma que sugira que o licenciante endossa você ou seu uso.
+- **Sem restrições adicionais**: Você não pode aplicar termos legais ou medidas tecnológicas que restrinjam legalmente outros de fazerem algo que a licença permite.
 
-### Notices
-- You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
-- No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+### Avisos
+- Você não precisa cumprir a licença para elementos do material em domínio público ou onde seu uso é permitido por uma exceção ou limitação aplicável.
+- Nenhuma garantia é dada. A licença pode não lhe dar todas as permissões necessárias para o uso pretendido. Por exemplo, outros direitos como publicidade, privacidade ou direitos morais podem limitar como você usa o material.
 
-## Full License Text
-[Note: The full legal text of CC BY 4.0 is extensive. For brevity, it is not included here but can be found at https://creativecommons.org/licenses/by/4.0/legalcode. If you prefer, you can copy the full text from that link into this file.]
+## Texto Completo da Licença
+[Nota: O texto legal completo da CC BY 4.0 é extenso. Para brevidade, ele não está incluído aqui, mas pode ser copiado diretamente do link acima e colado neste arquivo se preferir uma versão autônoma.]
