@@ -20,7 +20,7 @@ Você é livre para:
 - **Adaptar**: Remixar, transformar e criar a partir do material para qualquer fim, mesmo comercial.
 
 Sob os seguintes termos:
-- **Atribuição**: Você deve dar o crédito apropriado a Mario Sergio (mariosergiosl), fornecer um link para a licença e indicar se mudanças foram feitas. Você pode fazê-lo de qualquer maneira razoável, mas não de forma que sugira que o licenciante endossa você ou seu uso.
+- **Atribuição**: Você deve dar o crédito apropriado a Mario Luz (mariosergiosl), fornecer um link para a licença e indicar se mudanças foram feitas. Você pode fazê-lo de qualquer maneira razoável, mas não de forma que sugira que o licenciante endossa você ou seu uso.
 - **Sem restrições adicionais**: Você não pode aplicar termos legais ou medidas tecnológicas que restrinjam legalmente outros de fazerem algo que a licença permite.
 
 ### Avisos
