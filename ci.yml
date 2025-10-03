@@ -1,0 +1,8 @@
+- name: Test SSH and Salt API
+  run: |
+    podman run -d --name test-salt-master -p 10022:22 -p 8000:8000 salt-master-suse:3007.0
+    sleep 10
+    nc -zv localhost 10022
+    curl -s http://localhost:8000
+    podman stop test-salt-master
+    podman rm test-salt-master
