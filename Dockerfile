@@ -11,7 +11,7 @@ RUN groupadd -r -g 1000 salt && \
 # 2. Instalação de Pacotes, Chaves e Ajuste de Permissões
 RUN zypper refresh && \
     zypper install -y salt-master salt-api openssh vim curl python3-pip && \
-    # CORREÇÃO CRÍTICA: Instala as dependências Python que faltavam no openSUSE para a API
+    # Instala as dependências Python que faltavam no openSUSE para a API
     pip3 install cherrypy rpm-vercmp && \
     # CRÍTICO: Permite login root por senha para o SSH
     sed -i 's/^#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
