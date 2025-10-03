@@ -151,8 +151,8 @@ A automação é baseada em **States** e **Formulas**, armazenados no **Fileserv
 
 | Diretório no Host (Persistido) | Diretório no Contêiner (Fileserver) | Propósito |
 | :--- | :--- | :--- |
-| `/opt/salt-master\_data/files` | /srv/salt/ | Armazena **State Files** (\`.sls\`) e o \`top.sls\`. |
-| `/opt/salt-master\_data/pillar` | /srv/pillar/ | Armazena **Pillar Data** (Dados sensíveis ou específicos do Minion). |
+| /opt/salt-master\_data/files | /srv/salt/ | Armazena **State Files** (\`.sls\`) e o \`top.sls\`. |
+| /opt/salt-master\_data/pillar | /srv/pillar/ | Armazena **Pillar Data** (Dados sensíveis ou específicos do Minion). |
 
 ### Estrutura de Fórmulas (Exemplo NGINX)
 
@@ -160,7 +160,7 @@ A automação é baseada em **States** e **Formulas**, armazenados no **Fileserv
 
 | Local no Seu Host | Nome do Arquivo | Conteúdo e Justificativa |
 | :--- | :--- | :--- |
-| \`/opt/salt-master\_data/files/nginx/\` | \`init.sls\` | **Convenção:** O arquivo principal (\`init.sls\`) contém a lógica de instalação e serviço. |
+| /opt/salt-master\_data/files/nginx/ | init.sls | **Convenção:** O arquivo principal (\`init.sls\`) contém a lógica de instalação e serviço. |
 
 **Conteúdo do \`init.sls\`:**
 
