@@ -41,7 +41,7 @@ Este repositório contém um guia detalhado para configurar um **Salt Master (ve
 ## ⚖️ Licença
 Este conteúdo está licenciado sob [Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)](LICENSE.md).  
 **Obrigatório**: Cite o autor (Mario Luz, mariosergiosl) e o link do repositório em qualquer uso parcial, modificado ou completo. Exemplo:  
-> Adaptado de "Guia de Configuração de Salt Master com Podman" por Mario Sergio (https://github.com/mariosergiosl/salt-master), CC BY 4.0.
+> Adaptado de "Guia de Configuração de Salt Master com Podman" por Mario Luz (https://github.com/mariosergiosl/salt-master), CC BY 4.0.
 
 ## 🤝 Contribuições
 Interessado em melhorar este guia? Veja [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
