@@ -8,7 +8,7 @@ O projeto requer um diretório base, onde a imagem será construída, e os diret
 
 ### Comandos de Preparação do Host
 
-\`\`\`bash
+```bash
 # Crie o diretório do projeto
 mkdir salt-master-final
 cd salt-master-final
@@ -20,13 +20,13 @@ mkdir -p /opt/salt-master_data/{keys,cache,files,pillar}
 touch Dockerfile
 touch master_api.conf
 touch run.sh
-\`\`\`
+```
 
 ### 1.1. Arquivo: \`master_api.conf\` (Autenticação Corrigida)
 
 Este arquivo configura o Salt API na porta 8000 para usar a autenticação **\`auto\`** (chaves mestras), que é mais estável e evita a falha do módulo PAM.
 
-\`\`\`conf
+```conf
 # /etc/salt/master.d/master_api.conf
 rest_cherrypy:
   port: 8000
@@ -40,13 +40,13 @@ external_auth:
       - .*
       - '@runner'
       - '@wheel'
-\`\`\`
+```
 
 ### 1.2. Arquivo: \`run.sh\` (Orquestração de Serviços)
 
 Este script será o \`ENTRYPOINT\` (\`PID 1\`) do contêiner. Ele é configurado para iniciar o SSH Daemon e o Salt Master (que inicia a API internamente).
 
-\`\`\`bash
+```bash
 #!/bin/bash
 
 # Define a senha do root para acesso SSH. MUDE ISTO É ALTAMENTE RECOMENDADO!
@@ -61,13 +61,13 @@ ssh-keygen -A
 # INICIA O SALT MASTER COMO PROCESSO PRINCIPAL (PID 1)
 # O Master é o único responsável por iniciar o Salt API internamente.
 exec /usr/bin/salt-master -l info
-\`\`\`
+```
 
 ## 2. Dockerfile Final (openSUSE Leap 15.6)
 
 Este \`Dockerfile\` corrige todas as falhas de permissão e dependência.
 
-\`\`\`dockerfile
+```dockerfile
 FROM opensuse/leap:15.6
 
 # Variável de ambiente para o Shell
@@ -109,26 +109,26 @@ EXPOSE 22
 USER root
 ENTRYPOINT ["/usr/local/bin/run.sh"]
 CMD [""]
-\`\`\`
+```
 
 ## 3. Execução no Host (Comandos Completos)
 
 ### Ações Finais no Host
 
 1.  **Ajuste de Permissão Crítico (UID 1000):**
-    \`\`\`bash
+    ```bash
     # Garante que o diretório de persistência do host pertença ao UID 1000
     sudo chown -R 1000:1000 /opt/salt-master_data
-    \`\`\`
+    ```
 
 2.  **Construção da Imagem:**
-    \`\`\`bash
+    ```bash
     podman build -t salt-master-suse:3007.0 .
-    \`\`\`
+    ```
 
 3.  **Comando de Execução (Linha Única Completa):**
 
-    \`\`\`bash
+    ```bash
     podman run -d \
       --name salt-master \
       -p 10022:22/tcp \
@@ -141,7 +141,7 @@ CMD [""]
       -v /opt/salt-master_data/pillar:/srv/pillar:Z \
       --restart=always \
       salt-master-suse:3007.0
-    \`\`\`
+    ```
 
 ## 4. Estrutura de Automação (Salt Formulas)
 
@@ -164,7 +164,7 @@ A automação é baseada em **States** e **Formulas**, armazenados no **Fileserv
 
 **Conteúdo do \`init.sls\`:**
 
-\`\`\`yaml
+```yaml
 nginx_package:
   pkg.installed:
     - name: nginx
@@ -175,11 +175,11 @@ nginx_service:
     - enable: True
     - require:
       - pkg: nginx_package
-\`\`\`
+```
 
 **Comando de Execução do State:**
 
-\`\`\`bash
+```bash
 ssh root@<IP_VM> -p 10022
 salt '*' state.apply nginx  # Chama o arquivo nginx/init.sls
-\`\`\`
+```
