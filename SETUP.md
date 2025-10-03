@@ -171,5 +171,5 @@ salt '*' state.apply nginx
 
 ---
 
-**Licença**: Este guia está sob [CC BY 4.0](LICENSE.md). Cite Mario Sergio (mariosergiosl) e o repositório em qualquer uso.  
+**Licença**: Este guia está sob [CC BY 4.0](LICENSE.md). Cite Mario Luz (mariosergiosl) e o repositório em qualquer uso.  
 Última atualização: 03 de outubro de 2025.
