@@ -1,4 +1,4 @@
-# Creative Commons Attribution 4.0 International Public License
+# Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
 
@@ -12,7 +12,8 @@ Source: https://github.com/mariosergiosl/salt-master
 
 ## License Terms
 The full text of the Creative Commons Attribution 4.0 International License is available at:  
-https://creativecommons.org/licenses/by/4.0/legalcode
+https://creativecommons.org/licenses/by/4.0/legalcode (em inglês).
+https://creativecommons.org/licenses/by/4.0/deed.pt_BR (em português).
 
 ### Summary (not part of the legal license)
 You are free to:
