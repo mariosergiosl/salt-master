@@ -6,6 +6,8 @@
 [![Platform](https://img.shields.io/badge/Platform-openSUSE%20Leap%2015.6-blue)](https://www.opensuse.org/)
 [![Podman](https://img.shields.io/badge/Container-Podman-red?logo=podman)](https://podman.io/)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)](https://github.com/mariosergiosl/salt-master/blob/main/CONTRIBUTING.md)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/mariosergiosl/salt-master/ci.yml?label=Build)](https://github.com/mariosergiosl/salt-master/actions)
+[![Downloads](https://img.shields.io/github/downloads/mariosergiosl/salt-master/total?label=Downloads)](https://github.com/mariosergiosl/salt-master/releases)
 
 Este repositório contém um guia detalhado para configurar um **Salt Master (versão 3007)** com **Podman** no **openSUSE Leap 15.6**, incluindo suporte a **SSH** e **Salt API**. O guia é voltado para administradores de sistemas que desejam implementar automação de infraestrutura com SaltStack em ambientes containerizados.
 
